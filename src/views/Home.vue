@@ -108,7 +108,7 @@ export default {
       this.isLoading = true;
       axios
         .get(
-          `http://api.etherscan.io/api?module=account&action=txlist&address=${this.address}&startblock=0&endblock=99999999&sort=desc&apikey=${this.apiToken}`
+          `https://api.etherscan.io/api?module=account&action=txlist&address=${this.address}&startblock=0&endblock=99999999&sort=desc&apikey=${this.apiToken}`
         )
         .then(({ data }) => {
           console.log("data", data);
